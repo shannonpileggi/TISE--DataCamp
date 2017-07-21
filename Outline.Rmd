@@ -10,7 +10,7 @@ output: html_document
 
 ### Authors (in no particular order)
 + Shannon Pileggi (mailto:spileggi@calpoly.edu), Assistant Professor, Statistics Department, Cal Poly SLO
-+ Tessa McDonnel (mailto:tessamcdonnel@ymail.com), Undergraduate Research Assistant, Statistics Department, Cal Poly SLO
++ Tessa Mcdonnel (mailto:tessamcdonnel@ymail.com), Undergraduate Research Assistant, Statistics Department, Cal Poly SLO
 + Weston Stearns??? (mailto:weston@datacamp.com), Lead Community Course Development, DataCamp
 + Mine Centikaya-Rundel??? (mailto:mine@stat.duke.edu) Assistant Professor?, Statistics Department, Duke
 
