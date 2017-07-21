@@ -5,16 +5,16 @@ date: "July 21, 2017"
 output: html_document
 ---
 
-###Target Journal: 
+### Target Journal: 
 [*Technology Innovations in Statistics Education*](http://escholarship.org/uc/uclastat_cts_tise)
 
-###Authors (in no particular order)
+### Authors (in no particular order)
 + Shannon Pileggi (mailto:spileggi@calpoly.edu), Assistant Professor, Statistics Department, Cal Poly SLO
 + Tessa McDonnel (mailto:tessamcdonnel@ymail.com), Undergraduate Research Assistant, Statistics Department, Cal Poly SLO
 + Weston Stearns??? (mailto:weston@datacamp.com), Lead Community Course Development, DataCamp
 + Mine Centikaya-Rundel??? (mailto:mine@stat.duke.edu) Assistant Professor?, Statistics Department, Duke
 
-###Scope:
+### Scope:
 (3) Technology Innovations - discussions of new technology created by the author(s) 
 
  > New technologies should solve educational problems, provide infrastructure to assist statistics educators, or provide infrastructure to assist developers of statistics education technology. New Technology manuscripts should provide (at a minimum) a pedagogical context for the technology that includes a discussion of how the technology is meant to be used, who the intended users are, and what skills or concepts it is meant to help students learn. Manuscripts should provide a high-level description of the technology that includes discussing features of the design. Manuscripts must include a comparison and contrast with competing technologies, as appropriate. Authors should explain why the technology is innovative. Examples of New Technologies might include, but certainly not be limited to, web-based statistical software, applets designed to teach statistical concepts, or technology that harvests data for classroom use.
