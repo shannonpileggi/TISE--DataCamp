@@ -20,25 +20,28 @@ output: html_document
  > New technologies should solve educational problems, provide infrastructure to assist statistics educators, or provide infrastructure to assist developers of statistics education technology. New Technology manuscripts should provide (at a minimum) a pedagogical context for the technology that includes a discussion of how the technology is meant to be used, who the intended users are, and what skills or concepts it is meant to help students learn. Manuscripts should provide a high-level description of the technology that includes discussing features of the design. Manuscripts must include a comparison and contrast with competing technologies, as appropriate. Authors should explain why the technology is innovative. Examples of New Technologies might include, but certainly not be limited to, web-based statistical software, applets designed to teach statistical concepts, or technology that harvests data for classroom use.
  
 ### Educational problem solved
-+ Interactive platform to learn coding, with built in assistance and checks
++ Interactive platform to learn coding, with built in assistance and checks for understanding
  
 ### Infrastructure provided to assist statistics educators
-+ Take advantage of existing premium courses or build your own community course
++ Take advantage of existing courses or build your own community course
++ Tutorials on how to build courses
++ Links to some github repositories
  
 ### Pedagogical context
 + How technology is meant to be used - can be used as traditional homework assignment, in the classroom during lab periods, as pre-class assignments for flipped classrooms, even as a  test or assessment tools??
 + Intendend users - novice through advanced programming students will benefit, any college educator can access or contribute
 + Skills or concepts learned - focus is on coding in R to obtain statistical results, with some interpretation
 
-### High level description of technology
-+ features of the design
-
-### Comparison and contrast with competing technologies  
-
-### Explain why technology is innovative
-+ Coding lesson / instructions are juxtaposed with practice window
-
-### How to Create a DataCamp Community Course
+### High level description of technology / How to Create a DataCamp Community Course
 + What is needed to get started:  DataCamp account (verified instructor), GitHub
 + How to start building (including with collaborators)
 + Examples of DataCamp code for building different types of modules
+
+### Comparison and contrast with competing technologies  
++ Swirl lessons
++ Anything else?
+
+### Explain why technology is innovative
++ Coding lesson and instructions are juxtaposed with practice window, built in points and assessments to check for understanding, can integrate class with learning management systems
+
+
