@@ -26,6 +26,7 @@ output: html_document
 + Take advantage of existing courses or build your own community course
 + Tutorials on how to build courses
 + Links to some github repositories
+
  
 ### Pedagogical context
 + How technology is meant to be used - can be used as traditional homework assignment, in the classroom during lab periods, as pre-class assignments for flipped classrooms, even as a  test or assessment tools??
@@ -39,9 +40,11 @@ output: html_document
 
 ### Comparison and contrast with competing technologies  
 + Swirl lessons
++ 'Try R' by Code School 
 + Anything else?
+
 
 ### Explain why technology is innovative
 + Coding lesson and instructions are juxtaposed with practice window, built in points and assessments to check for understanding, can integrate class with learning management systems
-
++ All DataCamp courses are linked through GitHub version control, making it easy for statistics educators to collaborate and reproduce code.
 
