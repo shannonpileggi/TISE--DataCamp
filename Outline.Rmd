@@ -21,6 +21,7 @@ output: html_document
  
 ### Educational problem solved
 + Interactive platform to learn coding, with built in assistance and checks for understanding
++ User-friendly interface, unlike Swirl's interface which can be daunting for students who have never seen R
  
 ### Infrastructure provided to assist statistics educators
 + Take advantage of existing courses or build your own community course
@@ -40,7 +41,7 @@ output: html_document
 
 ### Comparison and contrast with competing technologies  
 + Swirl lessons
-+ 'Try R' by Code School 
++ 'Try R' by Code School--> interactive platform but not reproducible
 + Anything else?
 
 
