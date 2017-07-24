@@ -26,7 +26,8 @@ output: html_document
 ### Infrastructure provided to assist statistics educators
 + Take advantage of existing courses or build your own community course
 + Tutorials on how to build courses
-+ Links to some github repositories
++ Use the template course files from 'Create a DataCamp Course' dialog
++ Links to some github repositories: most importantly 'datacamp/testwhat' to help with submission correctness tests
 
  
 ### Pedagogical context
