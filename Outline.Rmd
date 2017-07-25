@@ -43,6 +43,7 @@ output: html_document
 * Tips for smoother course development process
     + Using LaTeX math symbols to display greek letters, operators, ect.
     + Need to add 'requirements.r' file with devtools to add packages
+    + When using datacamp and github, press 'refresh' when available on the screen
 
     
 ### Integrating with LMS

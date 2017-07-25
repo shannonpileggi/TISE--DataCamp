@@ -1,0 +1,38 @@
+---
+title: "Meeting Notes 7/25/17"
+author: "Tessa McDonnel"
+date: "7/25/2017"
+output: html_document
+---
+
+#### Weston Role for Collaboration
+
+* can provide data on users (1.3) million who have taken classes
+* know common mistakes from users
+* scts tailored to student mistakes
+* 1,000 universities enrolled
+* Professors use it as pre-lab exercise or assign entire courses
+
+#### Perspectives on how it works in classroom
+
+* Weston will try to get someone who has experience... might have to wait till October 
+
+
+
+#### Sharing platform preference
+
+* LaTeX and GitHub
+* Use email to communicate
+
+
+#### Weston Workflow
+* what data camp is 
+* look over what's written about the how-to
+
+
+## integrating LMS
+
+* used a lot by professors and works well
+
+
+
