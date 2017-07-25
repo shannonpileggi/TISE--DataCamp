@@ -1,0 +1,60 @@
+---
+title: "Outline"
+author: "Tessa McDonnel"
+date: "7/24/2017"
+output: html_document
+---
+
+### Abstract
+
+### Introduction
+* What is DataCamp?
+* increased use of R and R Markdown in classrooms- need more effective way to get students familiar with R
+* competing technologies- alternative ways for students to learn R in/out of the classroom with interactive platform
+    + Swirl: versatile for instructors but can not monitor student work 
+    + TryR: not versatile and can not monitor student work
+* Gamification- increased student focus when points are on the line, must actively engage to do well
+* Pedagogical Context
+    + How technology is meant to be used - can be used as traditional homework assignment, in the classroom during lab periods, as pre-class assignments for flipped classrooms, even as a  test or assessment tools??
+    + Intendend users - novice through advanced programming students will benefit, any college educator can access or contribute
+    + Skills or concepts learned - focus is on coding in R to obtain statistical results, with some interpretation
+
+### How to use Data Camp
+
+##### Using Courses
+* need a DataCamp account
+* Easy for students- don't have to download anything because course is web based 
+* Take advantage of free community courses- beginner to advanced programming students
+* Premium content free for academia- create a Classroom Group to track student progress
+* Monitor your own progress with My Profile
+
+
+##### Creating Course
+* What is needed to get started:  DataCamp account (verified instructor), link to GitHub
+* Use the template course files from 'Create a DataCamp Course' dialog
+* How to start building (including with collaborators)
+    + Course Structure
+    + Using Teach Editor (as opposed to GitHub)- can easily edit, preview and save changes
+    + Examples of DataCamp code for building different types of modules: normal, plain multiple choice, multiple choice for exercises involving graphs/images
+    + Capabilities of SCTs
+    + Links to some github repositories: 'datacamp/courses-intro-r' as another example of DataCamp code and 'datacamp/testwhat' to help with submission correctness tests
+    + Tailoring pre-existing code to fit specific needs
+    + Assign course to Classroom Group- can assign specific chapters/entire course/number of points
+* Tips for smoother course development process
+    + Using LaTeX math symbols to display greek letters, operators, ect.
+    + Need to add 'requirements.r' file with devtools to add packages
+
+    
+### Integrating with LMS
+* Easy to track student progress
+
+
+### Discussion 
+* experience of statistics instructors who have created a DataCamp course and used it in the classroom
+* overall pros, some cons- doesn't help students learn R Markdown
+* student difficulties/feedback?
+* how to get premium content free for teachers
+
+
+
+
