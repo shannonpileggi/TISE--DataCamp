@@ -1,0 +1,30 @@
+---
+title: "GUIDELINES FOR REVIEWING TECHNOLOGY INNOVATIONS"
+author: "Shannon Pileggi"
+date: "July 26, 2017"
+output: html_document
+---
+
+### Guidelines 
+
+This paper has been submitted as a Technology Innovations paper.  A description of technology innovation papers from the Aims & Scope seciton of the journal is provided below for reference.  When reviewing this manuscript, please pay attention to the questions listed below.   Of course, we are interested in any other comments or criticism you might have that would improve this paper, and also any suggestions for advice we should give to future reviewers of technology innovations.
+
+1. Innovation is key.  Does the paper clearly describe the innovation and why it is innovative?   The new technology could very well be a modification of existing technology or technologies.  Does the author make it clear which parts are innovative and which are not?    Is the innovation useful? Would you use it or could you imagine a colleague using it?
+
+2. Does the author clearly state the problem (educational, technical, administrative, etc.) that is to be solved by the technology? Do you feel that this is a compelling problem that is in need of a solution?
+
+3. Authors are not required to empirically justify that their innovation is effective. That said, does the paper propose a  convincing argument for why the proposed innovation is capable of solving or alleviating the stated problem? Can you suggest ways of strengthening this argument.
+
+4. Does the paper make clear the target audience for the innovation? What level of students, what level of preparation? What is assumed about the students' backgrounds? About the teachers'/instructors' background?
+
+5. Has the paper given readers enough information to decide whether this is an implementation that readers would like to adopt?
+
+6. For papers that describe new technologies, does the technology seem to you to be well designed? Can you suggest improvements, or identify features that would be hindrances either for students or instructors? (This might not be applicable to all submissions, of course.) Are you lacking information to make this decision and would such information, if provided, improve the paper? 
+
+7. Finally: should it be published?  Will it be publishable after your recommendations are made? Is it already publishable (pending minor changes)? Or are there too many open questions, a lack of novelty, or a lack of interest that prevent it from being publishable?
+
+### Aims & Scope
+
+Technology Innovations are of two types: discussions of new technology created by the author(s) or case studies of innovative uses of existing technology. New technologies should solve educational problems, provide infrastructure to assist statistics educators, or provide infrastructure to assist developers of statistics education technology. New Technology manuscripts should provide (at a minimum) a pedagogical context for the technology that includes a discussion of how the technology is meant to be used, who the intended users are, and what skills or concepts it is meant to help students learn. Manuscripts should provide a high-level description of the technology that includes discussing features of the design. Manuscripts must include a comparison and contrast with competing technologies, as appropriate. Authors should explain why the technology is innovative. Examples of New Technologies might include, but certainly not be limited to, web-based statistical software, applets designed to teach statistical concepts, or technology that harvests data for classroom use.
+
+Technology Case Studies are descriptions of particular innovative uses of existing technology to improve statistics education or are descriptions of methods for teaching the use of technology to solve problems of general statistical interest. Technology case studies should be feasible in a variety of settings, and authors should discuss implementation and access issues (e.g. cost, maintenance). Authors must provide a pedagogical context that includes a description of the problem solved by the use of technology and, more particularly, a description of the setting in which the authors implemented the technology. Examples might include descriptions of using data collection problems to collect "live" data, an example of using XML for data exchange, or demonstrations of teaching technologies that allow students to access unusual or complex data formats.
