@@ -12,7 +12,7 @@ output: html_document
 + Shannon Pileggi (mailto:spileggi@calpoly.edu), Assistant Professor, Statistics Department, Cal Poly SLO
 + Tessa Mcdonnel (mailto:tessamcdonnel@ymail.com), Undergraduate Research Assistant, Statistics Department, Cal Poly SLO
 + Weston Stearns??? (mailto:weston@datacamp.com), Lead Community Course Development, DataCamp
-+ Mine Centikaya-Rundel??? (mailto:mine@stat.duke.edu) Assistant Professor?, Statistics Department, Duke
++ Mine Cetinkaya-Rundel??? (mailto:mine@stat.duke.edu) Assistant Professor?, Statistics Department, Duke
 
 ### Scope:
 (3) Technology Innovations - discussions of new technology created by the author(s) 
