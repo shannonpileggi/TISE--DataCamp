@@ -1,0 +1,28 @@
+\documentclass[]{tise_style}
+
+%Preamble
+\title{Practice with LaTeX}
+\author{Tessa McDonnel}
+\date{7-26-2017}
+
+%Document
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+<<>>=
+print(x = 9+4)
+plot(rnorm(100))
+
+@
+\end{abstract}
+
+\section{}
+Testing whether this Rnw compiles correctly.
+The formula for a confidence interval of a population proportion:
+$\hat{p} \pm z\ast \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$
+\end{document}
+
+
+
