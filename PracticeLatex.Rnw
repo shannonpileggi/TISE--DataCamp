@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[]{tise_style}
 
 %Preamble
 \title{Practice with LaTeX}
