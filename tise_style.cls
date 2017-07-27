@@ -26,13 +26,13 @@
 \RequirePackage{graphicx,a4wide,color,hyperref,ae,fancyvrb}
 \RequirePackage[T1]{fontenc}
 %% bibliography
-\if@shortnames
-  \usepackage[authoryear,round]{natbib}
-\else
-  \usepackage[authoryear,round,longnamesfirst]{natbib}
-\fi
-\bibpunct{(}{)}{;}{a}{}{,}
-\bibliographystyle{jss}
+%\if@shortnames
+%  \usepackage[authoryear,round]{natbib}
+%\else
+%\usepackage[authoryear,round,longnamesfirst]{natbib}
+%\fi
+%\bibpunct{(}{)}{;}{a}{}{,}
+%\bibliographystyle{jss}
 %% paragraphs
 \setlength{\parskip}{1.0em}
 \setlength{\parindent}{0em}

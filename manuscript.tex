@@ -1,33 +1,39 @@
-\documentclass[]{tise_style}
-%\usepackage{hyperref}
-%\usepackage[backend=bibtex, sorting=none]{biblatex}
-%\bibliography{references}
+\documentclass{tise_style}
+\usepackage{natbib}
 
-%\begin{filecontents*}{references.bib}
-%@Manual{knitr2013,
-%    title = {knitr: A general-purpose package for dynamic report
-%      generation in R},
-%    author = {Yihui Xie},
-%    year = {2013},
-%    note = {R package version 1.4.1},
-%    url = {http://yihui.name/knitr/},
-%  }
-%\end{filecontents*}
+
 
 
 \title{Enter our title here}
 
-\author{Tessa Mcdonnel \\Statistics Department, California Polytechnic State University, San Luis Obispo}
+\author{Tessa Mcdonnel, Shannon Pileggi,  \\Statistics Department, California Polytechnic State University, San Luis Obispo}
 %\author{Shannon Pileggi \\Statistics Department, California Polytechnic State University, San Luis Obispo}
+
+
+\Abstract{ The text of your abstract.}
+
+\Keywords{one, two, three}
+
 
 
 \begin{document}
 
+
+
 \section{Introduction}
 
-Check this out, nobody said this %\cite{knitr2013}.  
 
-%\printbibliography
+Check this out, Schubert said this \cite{Schubert13}.
+
+
+Check this out, Campbell said this \cite{Campbell02} regularly, but cite this in parentheses \citep{Campbell02}.
+
+
+Check this out, Chi said this \cite{Chi81}.
+
+
+\bibliographystyle{ECA_jasa}
+\bibliography{bibfile}
 
 
 \end{document} 
