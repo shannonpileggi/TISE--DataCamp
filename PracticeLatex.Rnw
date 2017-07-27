@@ -1,9 +1,9 @@
-\documentclass{article}
+\documentclass[]{tise_style}
 
 %Preamble
 \title{Practice with LaTeX}
 \author{Tessa McDonnel}
-\data{7-26-2017}
+\date{7-26-2017}
 
 %Document
 \begin{document}
@@ -11,6 +11,7 @@
 \maketitle
 
 \begin{abstract}
+
 <<>>=
 print(x = 9+4)
 plot(rnorm(100))
