@@ -13,11 +13,13 @@ output: html_document
 * competing technologies- alternative ways for students to learn R in/out of the classroom with interactive platform
     + Swirl: versatile for instructors but can not monitor student work 
     + TryR: not versatile and can not monitor student work
+    + LearnR
 * Gamification- increased student focus when points are on the line, must actively engage to do well
 * Pedagogical Context
     + How technology is meant to be used - can be used as traditional homework assignment, in the classroom during lab periods, as pre-class assignments for flipped classrooms, even as a  test or assessment tools??
     + Intendend users - novice through advanced programming students will benefit, any college educator can access or contribute
     + Skills or concepts learned - focus is on coding in R to obtain statistical results, with some interpretation
+*accessibility - available on tablets/mobile devices
 
 ### How to use Data Camp
 
@@ -49,6 +51,8 @@ output: html_document
 ### Integrating with LMS
 * Easy to track student progress
 
+### iterative development
+* not sure where this fits in the outline - but use metadata from course to iteratively develop labs/activities where students are struggling
 
 ### Discussion 
 * experience of statistics instructors who have created a DataCamp course and used it in the classroom
