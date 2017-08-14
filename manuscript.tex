@@ -33,12 +33,10 @@ to use technology "as a way to explore conceptual ideas and enhance student lear
 The goal for any introductory statistics course is to help students develope the ability to think statistically 
 \citep{AmericanStatisticalAssociation2016}. 
 Introducing technology into the curriculum can greatly strengthen this ability by illustrating statistical concepts such as
-variability, randomness and simulation.
-
-Although numerous statistical technologies exist, \textit{R} and \textit{R Studio} provide extensive statistical capabilites 
-(free of charge) and are commonly used in statistics courses \citep{Chance2007}. R allows students to explore real-world data 
-sets which can not only enhance their understanding of concepts, but can also spark an interest in the domain of statistics 
-\citep{Wang2017}.
+variability, randomness and simulation. Although numerous statistical technologies exist, \textit{R} and \textit{R Studio} 
+provide extensive statistical capabilites (free of charge) and are commonly used in statistics courses \citep{Chance2007}. R 
+allows students to explore real-world data sets which can not only enhance their understanding of concepts, but can also spark
+an interest in the domain of statistics \citep{Wang2017}.
 
 With this increased use of R in classrooms, there is a need for a more effective way to get students familiar with R. While R
 software provides users with extraordinary abilities there is no doubt a steep learning curve. To facilitate this transition,
@@ -50,20 +48,41 @@ curriculum and assign it to students \citep{Carchedi2014}.
 
 *I'm confused about LearnR and thinks someone else should write about it.*
 
-TryR (Code School 2014) is a web-based programs and do not have this reproducible capability. Since public content authoring is not available, educators are limited on what they can teach their students. The R console can be intimidating to introductory statistics students so an advantage of web-based teaching tools is 
+TryR (Code School 2014) is a web-based programs and does not have this reproducible capability. Since public content authoring is not available, educators are limited on what they can teach their students. The R console can be intimidating to introductory statistics students so an advantage of web-based teaching tools is 
 the clean and easy to use interface. This is an important quality given that a lot of the time students struggle more with 
 software than the statistical concepts themselves \citep{Hare2017}. When students only need their web browser to participate,
 all installation complications are avoided and valuable class time can be focused on the statistics, not computer issues.
 
 
-DataCamp is also a web application that offers exhisting interactive R programing courses but unlike TryR, educators can 
-create their own courses that coincide with the material. 
-
+DataCamp is also a web application that offers interactive R programing courses but unlike TryR, educators can 
+create their own courses that coincide with the lessons or assign a pre-existing DataCamp course. The DataCamp website offers 
+free community courses as well as more specialized classes that you need to purchase. ... (i'll come back to this)
 
 For a statistical learning tool to be effective, the software system should be modular, extensible, reproducable, and web-
 based (Hare2017). 
 
-Modulariy is critical component in designing a statistical learning tool; it allows independent pieces to be easily added, modified or removed from the entire functionality (Hare2017). 
+Modulariy is critical component in designing a statistical learning tool; it allows independent pieces to be easily added, 
+modified or removed from the entire functionality (Hare2017). 
+
+\section{How to Use DataCamp}
+Pre-existing courses:
+DataCamp has a range of available free community courses that educators can utilize for supplimental R practice.
+
+
+Creating a DataCamp Course:
+To create a course on DataCamp you will first need to create a DataCamp account by visiting website\www.datacamp.com/teach and
+have a GitHub account. The simplest way to begin building the course is to use the templete course files from the 'Create
+DataCamp Course' dialog. This will automatically create a GitHub repository that is linked to DataCamp; any changes that are 
+make through DataCamp will update the GitHub repository and visa versa. The GitHub repository will contain three files: 
+README.md, course.yml, and chapter1.Rmd.
+Readme.md contains helpful information of how to get started, citing resourses to learn more about the process. 
+course.yml is a file that contains general information about the course you're creating: title, university, description, 
+difficulty level, ect.  
+chapter1.Rmd is a template chapter file with examples of 'normal' interative coding exercises and multiple choice questions.
+To add more chapters to an R course, create new files in the repository and name them chapter1.Rmd, chapter2.Rmd, chapter3.Rmd
+ect.
+
+DataCamp courses can contain 3 different types of exercises: Normal, Multiple choice, and video.
 
 
 Check this out, Schubert said this \cite{Schubert13}.
