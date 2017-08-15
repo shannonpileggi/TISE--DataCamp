@@ -21,6 +21,7 @@
 
 
 \section{Introduction}
+\usepackage{hyperref}
 
 It is no suprise that technology plays a vital role in practicing statistics and as the technological revolution continues to 
 unfold, the use of statistical software has become increasingly emphasized in statistics education. By integrating the 
@@ -95,7 +96,7 @@ for an exercise it will motivate them to meet their personal achievement goals. 
 DataCamp has a range of available free community courses that educators can utilize for supplimental R practice.
 
 \subsection{Creating a DataCamp Course}
-To create a course on DataCamp you will first need to create a DataCamp account by visiting website\www.datacamp.com/teach and
+To create a course on DataCamp you will first need to create a DataCamp account by visiting \url{www.datacamp.com/teach} and
 have a GitHub account. The simplest way to begin building the course is to use the templete course files from the 'Create
 DataCamp Course' dialog. This will automatically create a GitHub repository that is linked to DataCamp; any changes that are 
 make through DataCamp will update the GitHub repository and visa versa. The GitHub repository will contain three files: 
@@ -107,8 +108,27 @@ chapter1.Rmd is a template chapter file with examples of 'normal' interative cod
 To add more chapters to an R course, create new files in the repository and name them chapter1.Rmd, chapter2.Rmd, chapter3.Rmd
 ect.
 
+Educators are able to edit their courses in a number of ways but the 'Teach Editor' located in the teach dashboard is the
+most straight forward editor. The 'Teach Editor' is specifically designed to make the creation process of a DataCamp course
+as painless as possible, allowing writers to edit, preview, save changes and synchronize to a GitHub repository. Editing can
+also be done through GitHub's online editor and through git locally but these methods do not allow for automatic content
+previewing.
+
 DataCamp courses can contain 3 different types of exercises: Normal, Multiple choice, and video.
 
+A 'NormalExercise' is an interactive coding exercise containing a lesson section, instructions, pre-exercise code, sample 
+code, hint, solution and a submission correctness testing coded (SCT). However, the interface for students (or the 'Preview
+mode) only includes the lesson, Instructions, R script panel and a R console panel. 
+
+In the 'assignment' portion of the exercise, instructors can add additional information about the assignment that will help
+students understand and complete the instructions. The Instructions section will contain the actual task the student is 
+asked to execute. The 'pre-exercise code' sets up the workspace for the student; this section will contain code to import
+data sets, install packages and any other operation that you want to be in the workspace but hidden from students. The 'sample
+code' section contains code or notes that students view in the R script panel. Students' also use the R script panel to write
+the code that solves the tasks in the instructions. If students are not able to complete the task without help, they can click
+on the 'Hint' button or eventually the 'solution'. 
+
+Solution Correctness Test code..
 
 Check this out, Schubert said this \cite{Schubert13}.
 
