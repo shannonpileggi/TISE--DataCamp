@@ -1,6 +1,21 @@
 \documentclass{tise_style}
 \usepackage{natbib}
+%Having trouble getting tise_style to compile correctly in RStudio, will re-run it with this before submission
 
+%-----------------------------------------------------------------------------------------------------
+%Substitute this all with tise_style
+%\documentclass[12pt]{article}
+%\usepackage{natbib}  % used for citations
+%\usepackage[parfill]{parskip} %used for formatting style of text
+%\usepackage{url}
+
+% Sets margins to 1 in
+%\addtolength{\oddsidemargin}{-.5in}%
+%\addtolength{\evensidemargin}{-.5in}%
+%\addtolength{\textwidth}{1in}%
+%\addtolength{\textheight}{1.3in}%
+%\addtolength{\topmargin}{-.8in}%
+%-----------------------------------------------------------------------------------------------------
 
 
 
@@ -10,82 +25,79 @@
 %\author{Shannon Pileggi \\Statistics Department, California Polytechnic State University, San Luis Obispo}
 
 
-\Abstract{ The text of your abstract.}
-
-\Keywords{one, two, three}
-
 
 
 \begin{document}
 
 
+\maketitle
 
 \section{Introduction}
-\usepackage{hyperref}
 
-It is no suprise that technology plays a vital role in practicing statistics and as the technological revolution continues to 
-unfold, the use of statistical software has become increasingly emphasized in statistics education. By integrating the 
-capabilities of technology in introductory statistics courses, students can explore statistical ideas by analyzing and 
-interpreting real data sets \citep{Chance2007}, giving them an authentic view of how statistics is practiced outside of the 
-classroom \citep{Wang2017}. The revised 2016 \textit{Guidelines for Assessment and Instruction in Statistics Education} 
-(GAISE) College Report has also prompted the use of more technology in introductory statistics courses, encouraging educators 
+
+It is no suprise that technology plays a vital role in practicing statistics and as the technological revolution continues to
+unfold, the use of statistical software has become increasingly emphasized in statistics education. By integrating the
+capabilities of technology in introductory statistics courses, students can explore statistical ideas by analyzing and
+interpreting real data sets \citep{Chance2007}, giving them an authentic view of how statistics is practiced outside of the
+classroom \citep{Wang2017}. The revised 2016 \textit{Guidelines for Assessment and Instruction in Statistics Education}
+(GAISE) College Report has also prompted the use of more technology in introductory statistics courses, encouraging educators
 to use technology "as a way to explore conceptual ideas and enhance student learning" (AmericanStatisticalAssociation2016).
 
-The goal for any introductory statistics course is to help students develope the ability to think statistically 
-\citep{AmericanStatisticalAssociation2016}. 
+The goal for any introductory statistics course is to help students develope the ability to think statistically
+\citep{AmericanStatisticalAssociation2016}.
 Introducing technology into the curriculum can greatly strengthen this ability by illustrating statistical concepts such as
-variability, randomness and simulation. Although numerous statistical technologies exist, \textit{R} and \textit{R Studio} 
-provide extensive statistical capabilites (free of charge) and are commonly used in statistics courses \citep{Chance2007}. R 
+variability, randomness and simulation. Although numerous statistical technologies exist, \textit{R} and \textit{R Studio}
+provide extensive statistical capabilites (free of charge) and are commonly used in statistics courses \citep{Chance2007}. R
 allows students to explore real-world data sets which can not only enhance their understanding of concepts, but can also spark
 an interest in the domain of statistics \citep{Wang2017}.
 
 With this increased use of R in classrooms, there is a need for a more effective way to get students familiar with R. While R
-software provides users with extraordinary abilities there is no doubt a steep learning curve. To facilitate this transition 
+software provides users with extraordinary abilities there is no doubt a steep learning curve. To facilitate this transition
 to R programming, popular interactive teaching technologies have been created including Swirl (need to cite this?), LearnR
-and TryR. These tools 
-allow students to work through coding problems while recieving immediate feedback in and out of the classroom. Swirl is an 
+and TryR. These tools
+allow students to work through coding problems while recieving immediate feedback in and out of the classroom. Swirl is an
 open source R software package that allows students to learn R programing in their R console. This interactive learning tool
-contains several pre-existing lessons but what makes Swirl so popular is its versitality; educators can create their own 
-lesson (or tailor a pre-existing one) to fit their curriculum and assign it to students \citep{Carchedi2014}. 
+contains several pre-existing lessons but what makes Swirl so popular is its versitality; educators can create their own
+lesson (or tailor a pre-existing one) to fit their curriculum and assign it to students \citep{Carchedi2014}.
 
 
 *Swirl can be linked to a Coursera gradebook- learners can have swirl automatically notify coursera of a completed lesson
-but this is not avaiblable for the classroom setting (coursera website) so should I include this?* 
+but this is not avaiblable for the classroom setting (coursera website) so should I include this?*
 
 *I'm confused about LearnR and thinks someone else should write about it.*
 
-TryR (Code School 2014) is a web-based programs and does not have this reproducible capability. Since public content authoring 
-is not available, educators are limited on what they can teach their students. The R console can be intimidating to 
-introductory statistics students so an advantage of web-based teaching tools is 
-the clean and easy to use interface. This is an important quality given that a lot of the time students struggle more with 
+TryR (Code School 2014) is a web-based programs and does not have this reproducible capability. Since public content authoring
+is not available, educators are limited on what they can teach their students. The R console can be intimidating to
+introductory statistics students so an advantage of web-based teaching tools is
+the clean and easy to use interface. This is an important quality given that a lot of the time students struggle more with
 software than the statistical concepts themselves \citep{Hare2017}. When students only need their web browser to participate,
 all installation complications are avoided and valuable class time can be focused on the statistics, not computer issues.
 
 
-DataCamp has the same reproducable capabilities as Swirl but is a web-based application; educators can 
-create their own courses that coincide with their lessons and students can access the course without having to install R. 
-The DataCamp website offers pre-existing free community courses and specialized 'Premium' classes that you need to purchase. 
-However, when used for academic purposes the premium DataCamp content is also free of charge.. (i'll come back to this). 
-When you create a free classroom group on the DataCamp website, you can add student's to the group and assign pre-existing 
-course or a course that you've created for the particular class. 
- 
+DataCamp has the same reproducable capabilities as Swirl but is a web-based application; educators can
+create their own courses that coincide with their lessons and students can access the course without having to install R.
+The DataCamp website offers pre-existing free community courses and specialized 'Premium' classes that you need to purchase.
+However, when used for academic purposes the premium DataCamp content is also free of charge.. (i'll come back to this).
+When you create a free classroom group on the DataCamp website, you can add student's to the group and assign pre-existing
+course or a course that you've created for the particular class.
+
 A feature that set's DataCamp courses apart from competing technologies is the ability to track student progress. Educators
 can set deadlines for assignments and easily see not only when students complete an assignment but also which sections the
-students had trouble with in a detailed report (datacamp/teach website). Student scores can be automatically updated to a 
-current gradebook when you link the schools' learning management system (LMS) to DataCamp, allowing for a smooth integration. 
- 
+students had trouble with in a detailed report (datacamp/teach website). Student scores can be automatically updated to a
+current gradebook when you link the schools' learning management system (LMS) to DataCamp, allowing for a smooth integration.
+
 Each chapter in a DataCamp course is made up of modular exercises. Modulariy is critical component in designing a statistical
-learning tool because it allows independent pieces to be easily added, modified or removed from the entire functionality 
+learning tool because it allows independent pieces to be easily added, modified or removed from the entire functionality
 \citep{Hare2017}. Course exercises can be added, modified, or deleted as new topics arise and instructors can tailor
 these exercises to meet the needs of a particular class. The only disadvantage of the modularity feature is that the sessions
-are not cummulative; every exercise begins with a clear workspace so any object defined in a previous exercise needs to be 
+are not cummulative; every exercise begins with a clear workspace so any object defined in a previous exercise needs to be
 defined again. Each of these exercises can be given a number of redeemable points which the students can see when they begin
-the exercise, introducing a gamification feature to the learning experience. If the student completes the exercise without 
-any help they will recieve the full points. If they ask for a hint, 30 percent of the available points will be deducted and 
-all of the points will be deducted if they ask for the entire answer. When in a classroom group, students can view their 
-progress (points and chapters completed) as well as then progress of their peers. This can help students perform better 
-because they want to be on par with the rest of the class; furthermore, when students can see the number of available points 
-for an exercise it will motivate them to meet their personal achievement goals. \citep{Chang2016}. 
+the exercise, introducing a gamification feature to the learning experience. If the student completes the exercise without
+any help they will recieve the full points. If they ask for a hint, 30 percent of the available points will be deducted and
+all of the points will be deducted if they ask for the entire answer. When in a classroom group, students can view their
+progress (points and chapters completed) as well as then progress of their peers. This can help students perform better
+because they want to be on par with the rest of the class; furthermore, when students can see the number of available points
+for an exercise it will motivate them to meet their personal achievement goals. \citep{Chang2016}.
 
 
 
@@ -98,12 +110,12 @@ DataCamp has a range of available free community courses that educators can util
 \subsection{Creating a DataCamp Course}
 To create a course on DataCamp you will first need to create a DataCamp account by visiting \url{www.datacamp.com/teach} and
 have a GitHub account. The simplest way to begin building the course is to use the templete course files from the 'Create
-DataCamp Course' dialog. This will automatically create a GitHub repository that is linked to DataCamp; any changes that are 
-make through DataCamp will update the GitHub repository and visa versa. The GitHub repository will contain three files: 
+DataCamp Course' dialog. This will automatically create a GitHub repository that is linked to DataCamp; any changes that are
+make through DataCamp will update the GitHub repository and visa versa. The GitHub repository will contain three files:
 README.md, course.yml, and chapter1.Rmd.
-Readme.md contains helpful information of how to get started, citing resourses to learn more about the process. 
-course.yml is a file that contains general information about the course you're creating: title, university, description, 
-difficulty level, ect.  
+Readme.md contains helpful information of how to get started, citing resourses to learn more about the process.
+course.yml is a file that contains general information about the course you're creating: title, university, description,
+difficulty level, ect.
 chapter1.Rmd is a template chapter file with examples of 'normal' interative coding exercises and multiple choice questions.
 To add more chapters to an R course, create new files in the repository and name them chapter1.Rmd, chapter2.Rmd, chapter3.Rmd
 ect.
@@ -116,31 +128,33 @@ previewing.
 
 DataCamp courses can contain 3 different types of exercises: Normal, Multiple choice, and video.
 
-A 'NormalExercise' is an interactive coding exercise containing a lesson section, instructions, pre-exercise code, sample 
+A 'NormalExercise' is an interactive coding exercise containing a lesson section, instructions, pre-exercise code, sample
 code, hint, solution and a submission correctness testing coded (SCT). However, the interface for students (or the 'Preview
-mode) only includes the lesson, Instructions, R script panel and a R console panel. 
+mode) only includes the lesson, Instructions, R script panel and a R console panel.
 
 In the 'assignment' portion of the exercise, instructors can add additional information about the assignment that will help
-students understand and complete the instructions. The Instructions section will contain the actual task the student is 
+students understand and complete the instructions. The Instructions section will contain the actual task the student is
 asked to execute. The 'pre-exercise code' sets up the workspace for the student; this section will contain code to import
 data sets, install packages and any other operation that you want to be in the workspace but hidden from students. The 'sample
 code' section contains code or notes that students view in the R script panel. Students' also use the R script panel to write
 the code that solves the tasks in the instructions. If students are not able to complete the task without help, they can click
-on the 'Hint' button or eventually the 'solution'. 
+on the 'Hint' button or eventually the 'solution'.
 
 Solution Correctness Test code..
 
-Check this out, Schubert said this \cite{Schubert13}.
+%Check this out, Schubert said this \cite{Schubert13}.
 
 
-Check this out, Campbell said this \cite{Campbell02} regularly, but cite this in parentheses \citep{Campbell02}.
+%Check this out, Campbell said this \cite{Campbell02} regularly, but cite this in parentheses \citep{Campbell02}.
 
 
-Check this out, Chi said this \cite{Chi81}.
+%Check this out, Chi said this \cite{Chi81}.
 
 
-\bibliographystyle{ECA_jasa}
-\bibliography{bibfile}
+%Use this for final submission
+%\bibliographystyle{ECA_jasa}
+\bibliographystyle{Chicago}
+\bibliography{library}
 
 
-\end{document} 
+\end{document}
