@@ -46,7 +46,7 @@ to use technology "as a way to explore conceptual ideas and enhance student lear
 The goal for any introductory statistics course is to help students develope the ability to think statistically
 \citep{AmericanStatisticalAssociation2016}.
 Introducing technology into the curriculum can greatly strengthen this ability by illustrating statistical concepts such as
-variability, randomness and simulation. Although numerous statistical technologies exist, \textit{R} and \textit{R Studio}
+variability, randomness and hypothesis testing. Although numerous statistical technologies exist, \textit{R} and \textit{R Studio}
 provide extensive statistical capabilites (free of charge) and are commonly used in statistics courses \citep{Chance2007}. R
 allows students to explore real-world data sets which can not only enhance their understanding of concepts, but can also spark
 an interest in the domain of statistics \citep{Wang2017}.
@@ -61,8 +61,8 @@ contains several pre-existing lessons but what makes Swirl so popular is its ver
 lesson (or tailor a pre-existing one) to fit their curriculum and assign it to students \citep{Carchedi2014}.
 
 
-*Swirl can be linked to a Coursera gradebook- learners can have swirl automatically notify coursera of a completed lesson
-but this is not avaiblable for the classroom setting (coursera website) so should I include this?*
+While swirl can be linked to a Massive Open Online Courses (MOOCs) like Coursera through API, this is not avaiblable for the classroom
+learning management systems (LMS).
 
 *I'm confused about LearnR and think someone else should write about it.*
 
@@ -84,7 +84,7 @@ course or a course that you've created for the particular class.
 A feature that sets DataCamp apart from competing technologies is the ability to track student progress. Educators
 can set deadlines for assignments and easily see not only when students complete an assignment but also which sections the
 students had trouble with in a detailed report (datacamp/teach website). Student scores can be automatically updated to a
-current gradebook when you link the schools' learning management system (LMS) to DataCamp, allowing for a smooth integration.
+current gradebook when you link the schools' learning management system (LMS) to DataCamp, allowing for a smooth integration of student work.
 
 Each chapter in a DataCamp course is made up of modular exercises. Modulariy is critical component in designing a statistical
 learning tool because it allows independent pieces to be easily added, modified or removed from the entire functionality
@@ -132,15 +132,39 @@ A 'NormalExercise' is an interactive coding exercise containing a lesson section
 code, hint, solution and a submission correctness testing coded (SCT). However, the interface for students (or the 'Preview
 mode) only includes the lesson, Instructions, R script panel and a R console panel.
 
+
+The submission correctness testing code (or SCT) is the backbone for DataCamp's interactive nature. If a student submits an incorrect answer, they will 
+receive immediate feedback on what they are doing wrong and the system will guide them to the right answer. Instructors can use the default feedback
+that DataCamp automatically generates or write their own custom messages. The default feedback is meaningful and specific; most of the time custom messages
+are not necessary unless there is a common problem that student are struggling with in which more unique feedback is necessary. DataCamp provides a helpful
+R package called 'testwhat' which acts as a guide to writing the SCTs. 'testwhat' contains functions that can test different types of problems including
+loops, object definitions, printed output, functions, ect (datacamp website), this submission correctness testing code compares the ideal answer (from the 
+solution) to the students answer. Different arguements can be added to the test functions to alter the testing process and automatic feedback.
+
+**add an example of a test_function sct
+
 In the 'assignment' portion of the exercise, instructors can add additional information about the assignment that will help
 students understand and complete the instructions. The Instructions section will contain the actual task the student is
 asked to execute. The 'pre-exercise code' sets up the workspace for the student; this section will contain code to import
 data sets, install packages and any other operation that you want to be in the workspace but hidden from students. The 'sample
-code' section contains code or notes that students view in the R script panel. Students' also use the R script panel to write
+code' section contains code or notes that students view in the R script panel. Students also use the R script panel to write
 the code that solves the tasks in the instructions. If students are not able to complete the task without help, they can click
-on the 'Hint' button or eventually the 'solution'.
+on the 'Hint' button or eventually the 'solution'. When the student clicks the 'Submit Code' button, their answer passes through the SCT code where the
+code is checked for errors.
 
-Solution Correctness Test code....
+**add example of a normal coding exercise
+
+The 'MultipleChoiceExercise', as you would expect, contains a question and a list of various answers. Instructors write the questions in the 'lesson' 
+portion of the exercise and offer solutions in the 'Insruction' section. Like the 'normal' coding exercises, the lesson, instructions, pre-exercise code and
+SCTs have to be specified but sample and solution code do not. There are two types of multiple choice questions, simple and regular. The simple multiple 
+choice exercises are used for questions that do not require the R console or any R output. Regular multiple choice exercises allow instructors to pre
+-program objects or plots that the student needs to access to answer the question. Both types of multiple choice exercises are straightforward to write can 
+act as quick checks for understanding throughout the chapter.
+
+**add example of regular multiple choice exercise
+
+Video exercises act as in instructional video addition to a DataCamp course; instructors can add short videos of them explaining concepts and with relevent slides that appear in the background. The DataCamp website \url{https://www.datacamp.com/teach/documentation#tab_code_exercises} provides more detail on the content of the various exercises. 
+
 
 %Check this out, Schubert said this \cite{Schubert13}.
 
