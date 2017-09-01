@@ -8,7 +8,7 @@
 \usepackage{natbib}  % used for citations
 \usepackage[parfill]{parskip} %used for formatting style of text
 \usepackage{url}
-
+\usepackage{graphicx}
 % Sets margins to 1 in
 %\addtolength{\oddsidemargin}{-.5in}%
 %\addtolength{\evensidemargin}{-.5in}%
@@ -34,14 +34,16 @@
 
 \section{Introduction}
 
+Questions: 
+1) should i add more about how it can be used in a flipped classroom?
 
 It is no suprise that technology plays a vital role in practicing statistics and as the technological revolution continues to
-unfold, the use of statistical software has become increasingly emphasized in education. By integrating the
+unfold, the use of statistical software has become increasingly emphasized in education (**do i need to cite this**). By integrating the
 capabilities of technology in introductory statistics courses, students can explore fundamental concepts by analyzing and
-interpreting real data sets \cite{Chance2007}, giving them an authentic view of how statistics is practiced outside of the
+interpreting real data sets \cite{Chance2007, Hardin2015, Horton2014}, giving them an authentic view of how statistics is practiced outside of the
 classroom \cite{Wang2017}. The revised 2016 \textit{Guidelines for Assessment and Instruction in Statistics Education}
 (GAISE) College Report has also prompted the use of more technology in introductory statistics courses, encouraging educators
-to use technology "as a way to explore conceptual ideas and enhance student learning" (AmericanStatisticalAssociation2016).
+to use technology "as a way to explore conceptual ideas and enhance student learning" \cite{AmericanStatisticalAssociation2016}.
 
 The goal for any introductory statistics course is to help students develope the ability to think statistically
 \cite{AmericanStatisticalAssociation2016}.
@@ -51,7 +53,7 @@ provide extensive statistical capabilites (free of charge) and are commonly used
 allows students to explore real-world data sets which can not only enhance their understanding of concepts, but can also spark
 an interest in the domain of statistics \cite{Wang2017}.
 
-With this increased use of R in classrooms, there is a need for an effective way to get students familiar with R. While R
+With this increased use of R in classrooms, there is a need for an effective way to get students familiar with R \cite{Baumer2014}. While R
 software provides users with extraordinary abilities there is no doubt a steep learning curve. To facilitate this transition
 to R programming, popular interactive teaching technologies have been created including Swirl (need to cite this?), LearnR
 and TryR. These tools
@@ -84,7 +86,7 @@ Any college educator can create a classroom group on the DataCamp website, add s
 The collection of community courses avaiable at DataCamp inlcude a wide range of topics from 'Introduction to R' to
 'Quantitative Risk Management in R' so novice through advanced programming students will benefit.
 DataCamp can be used in the classroom in a number of ways: as traditional homework assignments, as an
-activity during lab periods, as pre-class assignments for a flipped classroom, and even as a test or assessment tool. 
+activity during lab periods, as pre-class assignments for a flipped classroom, and even as a test or assessment tool.
 
 A feature that sets DataCamp apart from competing technologies is the ability to track student progress. Educators
 can set deadlines for assignments and easily see not only when students complete an assignment but also which sections the
@@ -114,8 +116,13 @@ DataCamp has a range of available free community courses that educators can util
 To create a course on DataCamp you will first need to create a DataCamp account by visiting \url{www.datacamp.com/teach} and
 also a GitHub account. The simplest way to begin building the course is to use the templete course files from the 'Create
 DataCamp Course' dialog. This will automatically create a GitHub repository that is linked to DataCamp; any changes that are
-make through DataCamp will update the GitHub repository and visa versa. The GitHub repository will contain three files:
-README.md, course.yml, and chapter1.Rmd.
+make through DataCamp will update the GitHub repository and visa versa. Every DataCamp course is linked through GitHub version control,
+allowing statistics educators to easily collaborate and reproduce code. To add collaborators to the course, go to the course repository
+on GitHub and under 'Settings' you can select the 'Collabroators' tab and enter the usernames of people you want to collaborate with.
+
+
+
+The GitHub repository will contain three files: README.md, course.yml, and chapter1.Rmd.
 Readme.md contains helpful information of how to get started, citing resourses to learn more about the process.
 course.yml is a file that contains general information about the course you're creating: title, university, description,
 difficulty level, ect.
@@ -142,7 +149,7 @@ code, hint, solution and a submission correctness testing coded (SCT). However, 
 mode) only includes the lesson, Instructions, R script panel and a R console panel.
 
 
-The submission correctness testing code (or SCT) is the backbone for DataCamp's interactive nature. If a student submits an incorrect answer, they will 
+The submission correctness testing code (or SCT) is the backbone for DataCamps' interactive nature. If a student submits an incorrect answer, they will 
 receive immediate feedback on what they are doing wrong and the system will guide them to the right answer. Instructors can use the default feedback
 that DataCamp automatically generates or write their own custom messages. The default feedback is meaningful and specific; most of the time custom 
 messages are not necessary unless there is a common problem that student are struggling with in which more unique feedback is necessary. 
@@ -164,6 +171,18 @@ on the 'Hint' button or eventually the 'solution'. When the student clicks the '
 the code is checked for errors.
 
 %add example of a normal coding exercise
+
+
+\begin{figure}
+  \includegrpahics[width = \linewidth] {preview.jpg}
+\end{figure}
+
+
+
+
+
+
+
 
 The 'MultipleChoiceExercise', as you would expect, contains a question and a list of various answers. Instructors write the questions in the 'lesson'
 portion of the exercise and offer solutions in the 'Insruction' section. Like the 'normal' coding exercises, the lesson, instructions, pre-exercise 
