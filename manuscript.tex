@@ -36,6 +36,8 @@
 
 Questions: 
 1) should i add more about how it can be used in a flipped classroom?
+2) how to get side by side pictures (for the teach editor code vs. prevew?
+
 
 It is no suprise that technology plays a vital role in practicing statistics and as the technological revolution continues to
 unfold, the use of statistical software has become increasingly emphasized in education (**do i need to cite this**). By integrating the
@@ -149,6 +151,26 @@ code, hint, solution and a submission correctness testing coded (SCT). However, 
 mode) only includes the lesson, Instructions, R script panel and a R console panel.
 
 
+\begin{figure}[h]
+  \includegraphics[scale = 0.2] {edit.jpg}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics[scale = 0.2] {preview.jpg}
+\end{figure}
+
+
+
+In the 'assignment' portion of the exercise, instructors can add additional information about the assignment that will help
+students understand and complete the instructions. The Instructions section will contain the actual task the student is
+asked to execute. The 'pre-exercise code' sets up the workspace for the student; this section will contain code to import
+data sets, install packages and any other operation that you want to be in the workspace but hidden from students. The 'sample
+code' section contains code or notes that students view in the R script panel. Students also use the R script panel to write
+the code that solves the tasks in the instructions. If students are not able to complete the task without help, they can click
+on the 'Hint' button or eventually the 'solution'. When the student clicks the 'Submit Code' button, their answer passes through the SCT code where 
+the code is checked for errors.
+
+
 The submission correctness testing code (or SCT) is the backbone for DataCamps' interactive nature. If a student submits an incorrect answer, they will 
 receive immediate feedback on what they are doing wrong and the system will guide them to the right answer. Instructors can use the default feedback
 that DataCamp automatically generates or write their own custom messages. The default feedback is meaningful and specific; most of the time custom 
@@ -160,23 +182,6 @@ repository: 'datacamp/testwhat').
 arguements can be added to the test functions to alter the testing process and automatic feedback.
 
 %add an example of a test_function sct
-
-In the 'assignment' portion of the exercise, instructors can add additional information about the assignment that will help
-students understand and complete the instructions. The Instructions section will contain the actual task the student is
-asked to execute. The 'pre-exercise code' sets up the workspace for the student; this section will contain code to import
-data sets, install packages and any other operation that you want to be in the workspace but hidden from students. The 'sample
-code' section contains code or notes that students view in the R script panel. Students also use the R script panel to write
-the code that solves the tasks in the instructions. If students are not able to complete the task without help, they can click
-on the 'Hint' button or eventually the 'solution'. When the student clicks the 'Submit Code' button, their answer passes through the SCT code where 
-the code is checked for errors.
-
-%add example of a normal coding exercise
-
-
-\begin{figure}
-  \includegrpahics[width = \linewidth] {preview.jpg}
-\end{figure}
-
 
 
 
