@@ -84,8 +84,8 @@ the clean and easy to use interface. This is an important quality given that a l
 software than the statistical concepts themselves \cite{Hare2017}. When students only need their web browser to participate,
 all installation complications are avoided and valuable class time can be focused on the statistics, not computer issues.
 
-The purpose of this paper is to introduce a relatively new interactive teaching tool, DataCamp, which incorporates only the best
-qualities from the tools mentioned above.
+The purpose of this article is to introduce a relatively new technology, DataCamp, which incorporates the best
+qualities from the teaching tools mentioned above.
 
 DataCamp has the same reproducable capabilities as swirl but is a web-based application; educators can
 create their own courses that coincide with their lessons and students can access the course without having to install R.
@@ -168,6 +168,37 @@ mode) only includes the lesson, Instructions, R script panel and a R console pan
   \includegraphics[scale = 0.2] {edit.jpg}
 \end{figure}
 
+\begin{verbatim}
+--- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:9707072219
+## Quick check 2
+
+What can R be used for?
+
+*** =instructions
+- Graphing data
+- Analyzing data
+- Calculations
+- All of the above
+
+*** =hint
+R software can be used for all of these things.
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+msg_bad <- "That is not correct"
+msg_success <- "Exactly! R can do all of these things."
+test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
+```
+
+
+
+\end{verbatim}
 
 \begin{figure}[h]
   \includegraphics[scale = 0.19] {preview.jpg}
@@ -225,13 +256,14 @@ more detail on the content of the various exercises.
 All DataCamp courses will have a course badge and most will use data sets and R packages. Information on how to add data sets and images
 can be found in DataCamps 'Teach' documentation \url{https://www.datacamp.com/teach/documentation} under the 'Upload Assets' tab. However,
 there is currently no information on DataCamp about integrating R packages. To use R packages in a course, you will need to create a new file
-in the GitHub course repository named 'requirements.r'. The file should contain: $devtools::install_version$, package name and version for every
-package you use in the DataCamp course. For example, following code will add the 'ggplot2' and 'mosaic' packages to the repository.
+in the GitHub course repository named \texttt{requirements.r}. The file should contain: \texttt{devtools::install\_version}, package name and version for every
+package you use in the DataCamp course. For example, following code will add the \texttt{ggplot2} and \texttt{mosaic} packages to the repository.
 
-$$devtools::install_version("ggplot2", "2.2.0")$$
-$$devtools::install_version("mosaic", "0.14.4")$$
-
-In order for DataCamp to recognize this new file, you will need to add $$from: r-base-prod:27$$ to the course.yml file.
+\begin{verbatim}
+devtools::install_version("ggplot2", "2.2.0")
+devtools::install_version("mosaic", "0.14.4")
+\end{verbatim}
+In order for `DataCamp' to recognize this new file, you will need to add $$from: r-base-prod:27$$ to the course.yml file.
 
 **How do I override the subscripts for devtools?**
 
