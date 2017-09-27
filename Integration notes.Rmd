@@ -1,0 +1,18 @@
+---
+title: "Class set up notes"
+author: "Shannon Pileggi"
+date: "September 10, 2017"
+output: html_document
+---
+
++ Allow DataCamp one week to set up your group
+
++ Invite students by email addresses, separated by space or comma VERSUS using the LMS integration.  Only do one or the other?  Instructions sufficient to set up, relatively quick for first time.
+
++ Then assign students either an entire course or a chapter in a course, and set the deadline.  DataCamp sends an email notification of assignment.
+
++ Assignment and Courses section - what is the difference?  A bit confusing.  If I want to assign weekly chapters should the entire course also be assigned?
+
++ does integration duplicate assigments?
+
++ grader role difficulty using link

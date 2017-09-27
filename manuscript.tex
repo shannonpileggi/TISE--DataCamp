@@ -9,6 +9,8 @@
 \usepackage[parfill]{parskip} %used for formatting style of text
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{fancyvrb}
 % Sets margins to 1 in
 %\addtolength{\oddsidemargin}{-.5in}%
 %\addtolength{\evensidemargin}{-.5in}%
@@ -34,6 +36,8 @@
 
 \section{Introduction}
 
+\doublespacing
+
 Questions: 
 
 1) should i add more about how it can be used in a flipped classroom
@@ -42,6 +46,7 @@ Questions:
   - yes one sentence
 
 3) were you going to set something up on here that i was going to fill in? Oh the R code boxes where I can add the DataCamp edit code
+
 It is no suprise that technology plays a vital role in practicing statistics and as the technological revolution continues to
 unfold, the use of statistical software has become increasingly emphasized in education (**do i need to cite this**). By integrating the
 capabilities of technology in introductory statistics courses, students can explore fundamental concepts by analyzing and
@@ -165,8 +170,9 @@ code, hint, solution and a submission correctness testing coded (SCT). However, 
 mode) only includes the lesson, Instructions, R script panel and a R console panel.
 
 
-
-\begin{verbatim}
+\begin{figure}
+\caption{This code does this}
+\begin{Verbatim}[frame=single]
 --- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:9707072219
 ## Quick check 2
 
@@ -193,10 +199,8 @@ msg_bad <- "That is not correct"
 msg_success <- "Exactly! R can do all of these things."
 test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
-
-
-
-\end{verbatim}
+\end{Verbatim}
+\end{figure}
 
 \begin{figure}[h]
   \includegraphics[scale = 0.19] {preview.jpg}
@@ -275,7 +279,7 @@ In order for DataCamp to recognize this new file, you will need to add \texttt{f
 
 %Use this for final submission
 %\bibliographystyle{ECA_jasa}
-\bibliographystyle{ECA_jasa}
+\bibliographystyle{plainnat}
 \bibliography{library}
 % before it was 'library' so I thought if I changed it to the new bib file it would work but it doesn't :(
 
