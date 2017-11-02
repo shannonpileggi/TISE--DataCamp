@@ -235,6 +235,7 @@ In the above exercise code, the \texttt{type} is Normal, the language is R, the 
 corresponds to R Programming). DataCamp assigns 100 points to normal coding exercises but this value can be modified depending on
 difficulty level. After students have completed the exercise, they can check their personal profile to see how many points they earned.
 
+
 In the `Assignment' portion of the exercise, instructors can add additional information about the assignment that will help
 students understand and complete the instructions. The `Instructions' section contains the actual task the student is
 asked to execute; instructors can also include a `Hint' for extra guidence (optional). The 'pre-exercise code' sets up the workspace for 
@@ -254,15 +255,15 @@ contains the default feedback for an incorrect submission of the \texttt{hist()}
 
 \begin{figure}
 \caption{This code does this}
-\begin{verbatim}[frame=single]
+\begin{Verbatim}[frame=single]
 
-Student:
+Student types:
 histogram(dataset$var_name)
 
 Default message:
 Have you called hist()?
 
-Student:
+Student types:
 hist(var_name)
 
 Default message:
@@ -270,17 +271,35 @@ Check your call of hist(). Did you correctly specify
 the argument x? Evaluating the expression you specified
 caused an error.
 
-Student:
+Student types:
 hist(dataset$misspelled_var)
 
 Default message:
-Check your call of hist(). Did you correctly specify the argument x? 
+Check your call of hist(). Did you correctly specify the
+argument x? 
 It is a NULL, while it should be a numeric vector.
 
 
-\end{verbatim}
+\end{Verbatim}
 \label{fig:code1}
 \end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 The default feedback is meaningful and specific; most of the time custom 
 messages are not necessary unless there is a common problem that student are struggling with in which more unique feedback is necessary. 
@@ -300,11 +319,11 @@ portion of the exercise and offer solutions in the 'Insructions' section. Simila
 code and SCTs have to be specified but sample and solution code do not. DataCamp offers two types of multiple choice questions: simple and regular. 
 The simple multiple choice exercises are used for questions that do not require the R console or any R output. Regular multiple choice exercises 
 allow instructors to pre-program objects or plots that the student needs to access to answer the question. Both types of multiple choice exercises 
-are straightforward to write can act as quick checks for understanding throughout the chapter.
+are straight forward to write can act as quick checks for understanding throughout the chapter.
 
 \begin{figure}
 \caption{This code does this}
-\begin{verbatim}[frame=single]
+\begin{Verbatim}[frame=single]
 --- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:9707072219
 ## Quick check 2
 
@@ -331,8 +350,7 @@ msg_bad <- "That is not correct"
 msg_success <- "Exactly! R can do all of these things."
 test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
-\end{verbatim}
-\label{fig:code1}
+\end{Verbatim}
 \end{figure}
 
 %add example of regular multiple choice exercise --> use Quick check 2 from lab 8
