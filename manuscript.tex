@@ -92,7 +92,7 @@ interpreting real data sets \citep{Chance2007, Hardin2015, Horton2014}, giving t
 classroom \citep{Wang2017}.
 
 The goal for any statistics course is to help students develop the ability to think statistically
-\citep{AmericanStatisticalAssociation2016} and introducing technology into the curriculum can greatly strengthen this ability by illustrating concepts such as
+\citep{AmericanStatisticalAssociation2016}; introducing technology into the curriculum can greatly strengthen this ability by illustrating concepts such as
 variability, randomness and hypothesis testing. Although numerous statistical technologies exist, R and R Studio
 provide extensive computational abilities (free of charge) and are commonly used in statistics courses. R
 allows students to explore real-world data sets which can not only enhance their understanding of concepts, but can also spark
@@ -111,7 +111,7 @@ open source R package that allows students to learn R programming in the R conso
 contains several pre-existing lessons but educators can also create their own
 lesson content to fit specific curriculum \citep{Carchedi2014}.
 While \textit{swirl} can be linked to Massive Open Online Courses (MOOCs) like Coursera, integration of learning management 
-systems (LMS) is not available for the classroom. 
+systems (LMS) is not available currently. 
 
 \subsubsection{Try R}
 Try R \citep{TryR} is another interactive R programming course but unlike \textit{swirl}, Try R is web-based. 
@@ -139,19 +139,16 @@ classroom in a number of ways: as traditional homework assignments, as an activi
 for a flipped classroom, and even as a test or assessment tool.
 
 \subsubsection{Wide variety of course topics}
-The DataCamp website offers pre-existing free community courses as well as more specialized \textit{Premium} classes that require a fee. 
-The collection of \textit{community} courses available on DataCamp include a wide range of topics from \textit{Introduction to R} to
+The DataCamp website offers free `community' courses as well as more specialized \textit{Premium} classes that require a fee. 
+However, when used for academic purposes the \textit{Premium} DataCamp content is free for up to six months.
+College educators can create a classroom group on the DataCamp website, add students to the group, 
+assign any of the existing courses and even assign a course that they've developed themselves. 
+The collection of community courses available on DataCamp include a wide range of topics from \textit{Introduction to R} to
 \textit{Quantitative Risk Management in R} so novice through advanced programming students benefit.
-
-\subsubsection{Integration with Learning Management Systems}
-One feature that sets DataCamp apart from competing technologies is the ability to track student progress. Educators
-can set deadlines for assignments and view which sections the
-students had trouble with in a detailed report. DataCamp courses can also be linked to the school's learning management system (LMS) so student scores are automatically updated to the
-current grade-book, allowing for a smooth integration of student work.
 
 \subsubsection{Modularity}
 DataCamp courses are broken up into chapters and each chapter is composed of modular exercises. Modularity is a critical component in designing a
-learning tool because it allows independent pieces to be easily added, modified or removed from the entire functionality
+learning tool because it allows independent pieces to be added, modified or removed from the entire functionality
 \citep{Hare2017}. DataCamp course exercises can be added, modified, or deleted as new topics arise and instructors can tailor
 these exercises to meet the needs of a particular class. The only disadvantage of the modularity feature is that the sessions
 are not cumulative; every exercise begins with a clear work space so an object defined in a previous exercise needs to be
@@ -160,11 +157,19 @@ defined again.
 \subsubsection{Gamification}
 Each chapter exercise is given a specified number of redeemable points which the students can see when they begin
 the exercise, introducing a gamification feature to the learning experience. When in a classroom group, students can view their
-progress (points and chapters completed) as well as then progress of their peers. This can help students perform better
-because they want to be on par with the rest of the class; furthermore, when students can see the number of available points
+progress (points and chapters completed) as well as the progress of their peers. This can help students perform better
+in order to be on par with the rest of the class. Furthermore, when students can see the number of available points
 for an exercise it can motivate them to meet their personal achievement goals. \citep{Chang2016}. If the student completes an exercise without
 any assistance, they will receive the full points. If the student is having trouble with a problem, they can view the exercise `hint' option and 30 percent
 of the available points are deducted; all points are deducted if they ask for the solution. 
+
+\subsubsection{Integration with Learning Management Systems}
+One feature that sets DataCamp apart from competing technologies is the ability to track student progress. Educators
+can set deadlines for assignments and view which sections the
+students had trouble with in a detailed report. DataCamp courses can also be linked to the school's learning management system (LMS) so student scores are automatically updated to the
+current grade-book, allowing for a smooth integration of student work.
+
+
 \subsection{Pre-existing R courses}
 In order to utilize 
 DataCamp's \textit{classroom} benefits, first create an academic group on the website \url{https://www.datacamp.com/groups/education}.
@@ -173,14 +178,14 @@ by either creating a group through the DataCamp website or linking directly to y
 \section{Creating a DataCamp Course}
 \subsection{Getting Started}
 To build a course on DataCamp you will first need to create a DataCamp account by visiting \url{www.datacamp.com/teach} as well as
-a Git Hub account \url{https://github.com}. Every DataCamp course is linked through Git Hub version control,
+a GitHub account \url{https://github.com}. Every DataCamp course is linked through GitHub version control,
 allowing statistics educators to easily collaborate and reproduce code. To add collaborators to the course, go to the course repository
-on Git Hub and under \texttt{Settings} you can enter the user names of collaborators. Collaborators who are not the primary author need 
+on GitHub and under \texttt{Settings} you can enter the user names of collaborators. Collaborators who are not the primary author need 
 to uncheck `My Courses' in order to view and contribute to the repository. The simplest way to begin building the course is to use the template course files from the
-\texttt{Create DataCamp Course} dialog. This will automatically create a Git Hub repository that is linked to DataCamp; any changes that are
-made through DataCamp will update the Git Hub repository and vice versa. 
+\texttt{Create DataCamp Course} dialog. This will automatically create a GitHub repository that is linked to DataCamp; any changes that are
+made through DataCamp will update the GitHub repository and vice versa. 
 
-The newly created Git Hub repositories will contain three files: 
+The newly created GitHub repositories will contain three files: 
 
 1) \texttt{README.md}
 
@@ -198,12 +203,12 @@ To add more chapters to an R course, create new files in the repository and name
 \subsection{Course Editing}
 Educators are able to edit their courses in a number of ways but the \texttt{Teach Editor} located in the teach dashboard is the
 most straight forward editor. The \texttt{Teach Editor} is specifically designed to make the creation process of a DataCamp course
-as painless as possible, allowing writers to edit, preview, save changes and synchronize to a Git Hub repository. Editing can
-also be done through Git Hub's online editor or through git locally but these methods do not allow for automatic content
+as painless as possible, allowing writers to edit, preview, save changes and synchronize to a GitHub repository. Editing can
+also be done through GitHub's online editor or through git locally but these methods do not allow for automatic content
 viewing.
 \subsection{Components of a DataCamp Course}
 \subsubsection{Exercise Layout}
-Figure1 is an example of an interactive coding exercise for an introductory statistics course. Students will read the lesson information and instructions, answer the question, and submit their code; it should take approximately 5 minutes to complete this exercise.
+Figure1 is an example of an exercise in the editor and figure2 is the corresponding interface for students. Students will read the lesson information and instructions, answer the question, and submit their code; it should take approximately 5 minutes for a student to complete this exercise.
 \begin{figure}
 \caption{Teach Editor Interface}
 \begin{Verbatim}[frame=single]
@@ -245,36 +250,44 @@ and `wage` variable.")
 \end{figure}
 
 \begin{figure}[h]
-  \includegraphics[scale = 0.40] {preview.jpg}
+  \includegraphics[scale = 0.20] {preview.jpg}
 \end{figure}
-
-Whenever a new exercise is added, DataCamp automatically produces the top line (header) in the editor. The header specifies the type
-of exercise \texttt{type}, language \texttt{lang}, available points \texttt{xp}, skills learned \texttt{skills} and a \texttt{key}. The key acts as a unique
-identifier for that exercise, allowing you to modify the content without losing any student data. Currently, DataCamp offers
-eight different skills which are defined by numbers 1-8. The skills and their corresponding numbers can be found in the DataCamp
-documentation \url{https://www.datacamp.com/teach/documentation#tab_gamification}. 
-In the above exercise code (refer to teach editor code), the \texttt{type} is Normal, the language is R, the available points is 100 and the skills learned is 1 (which 
-corresponds to R Programming). DataCamp assigns 100 points to normal coding exercises but this value can be modified depending on
+\subsubsection{Exercise Header}
+Whenever a new exercise is added, DataCamp automatically produces the top line of the editor. The header specifies the type
+of exercise (\texttt{type}), programming language (\texttt{lang}), available points (\texttt{xp}), skills learned (\texttt{skills}) and a \texttt{key}. 
+The types of exercises include normal coding, video, and multiple choice exercises; we will discuss these further in the next section. In addition to R, DataCamp offers courses in other programming languages including Python and SQL for data science.
+DataCamp assigns 100 points \texttt{xp} to normal coding exercises but this value can be modified depending on
 difficulty level. After students have completed the exercise, they can check their personal profile to see how many points they earned.
+The \texttt{skills} portion of the header refers to DataCamp's
+eight different skill sets, defined by numbers 1-8. Skills and their corresponding numbers can be found in the DataCamp
+documentation \url{https://www.datacamp.com/teach/documentation#tab_gamification}. 
+Lastly, the \texttt{key} acts as a unique
+identifier for that exercise, allowing you to modify content without losing any student data. 
+In the above exercise code (refer to teach editor code), the \texttt{type} is Normal, the language is R, the available points is 100xp and the skills learned is 1 (which 
+corresponds to R Programming). 
 
-
+\subsubsection{Exercise Body}
 In the \textit{Assignment} portion of the exercise (not labeled but below the header), instructors can add additional information about the assignment that will help
 students understand and complete the instructions. The \textit{instructions} section contains the actual task the student is
 asked to execute; instructors can also include a \textit{hint} for extra guidance (optional). The \textit{pre-exercise code} sets up the work space for 
-the student; this section will contain code to import data sets, install packages and any other operation that you want to be available to
-students. The \textit{sample code} section contains code or notes that students view in the R script panel. Students also use the R script panel to write
-the code that solves the tasks in the instructions. The correct answer to an exercise is coded in the \textit{solution} section
-and when the student clicks the \texttt{Submit Code} button, their answer passes through the SCT code where their code is checked for errors.
+the student - this section contains code to import data sets, install packages and any other operation that you want to be available to
+students. The \textit{sample code} section will contain code or notes that will be visible to students in the R script panel. Students also use the R script panel to write code that solves the tasks in the instructions. The correct answer to an exercise is coded in the \textit{solution} section
+and when a student clicks the \texttt{Submit Code} button, their answer passes through the SCT code where their answer is checked for errors.
 
 \subsubsection{Submission Correctness Test}
 The submission correctness testing code (or SCT) automatically assesses if the correct code was submitted. If a student submits an 
 incorrect answer, they will receive immediate feedback on what they are doing wrong and the system will guide them to the right answer.
-Instructors can use the default feedback that DataCamp automatically generates or write their own custom messages. For example, figure blank
-contains the default feedback for a few possible incorrect submissions of the \texttt{hist()} function.
+DataCamp provides a helpful R package called \textit{testwhat} which acts as a guide to writing and using SCTs - available on DataCamp's GitHub 
+repository: \url{https://github.com/datacamp/testwhat/wiki}. 
+\textit{testwhat} contains functions that test different types of problems including loops, object definitions, printed output, functions, and other R programming problems.
+The submission correctness testing code compares the ideal answer (from the solution code) to the students answer. Various
+arguments can be added to the test functions to adjust the testing process and feedback.
+Instructors can either use the default feedback that DataCamp automatically generates or write their own custom messages. For example, figure blank
+contains the default feedback for a few possible incorrect submissions of the \texttt{hist()} function from the example exercise \textit{Visualizing quantitative data in R}.
 
 \begin{figure}
 \caption{Examples of DataCamps Default Feedback}
-\begin{Verbatim}[frame=single]
+\begin{Verbatim}
 Student types:
 histogram(dataset$var_name)
 
@@ -298,35 +311,33 @@ argument x?
 It is a NULL, while it should be a numeric vector.
 
 \end{Verbatim}
-\label{fig:code1}
 \end{figure}
-The default feedback is meaningful and specific; most of the time custom 
-messages are not necessary unless there is a common problem that student are struggling with in which more unique feedback is necessary. 
-DataCamp provides a helpful R package called \textit{testwhat} which acts as a guide to writing and using SCTs (this can be accessed on DataCamp's Git Hub 
-repository: \url{https://github.com/datacamp/testwhat/wiki}. 
-\textit{testwhat} contains functions that can test different types of problems including loops, object definitions, printed output, functions, ect.
-The submission correctness testing code compares the ideal answer (from the solution) to the students answer. Different
-arguments can be added to the test functions to alter the testing process and automatic feedback. (**do I cite datacamp website here?**)
+DataCamp's default feedback is meaningful and specific so a lot of the time custom 
+messages are not necessary.
+However, if students are struggling with a common problem then unique feedback can be very beneficial.
 
 \subsection{DataCamp Exercise Types}
 DataCamp courses may contain 3 different types of exercises: Normal coding, video, and multiple choice exercises.
 \subsubsection{Normal Exercise}
-A \texttt{NormalExercise} is an exercise that prompts a user to submit code. The components of this include: lesson section, instructions, pre-exercise code, sample code, hint, solution and a submission correctness testing code (SCT). (add reference to teach editor code) However, the interface for students (or the \texttt{Preview}
-mode) only includes the lesson, instructions, R script panel and a R console panel (Figure~\ref{fig:code1}).
+A \texttt{NormalExercise} is an exercise that prompts a user to submit code. The components of this include: lesson section, instructions, pre-exercise code, sample code, hint, solution and submission correctness testing code (SCT). However, the interface for students (or the \texttt{Preview}
+mode) will only include the lesson, instructions, R script panel and R console panel (Figure~\ref{fig:code1}).
 \subsubsection{Video Exercise}
-Video exercises act as in instructional video addition to a DataCamp course; instructors can add short videos of them explaining concepts and with 
-relevant slides that appear in the background. The DataCamp website \url{https://www.datacamp.com/teach/documentation#tab_code_exercises} provides 
-more detail on the content of the various exercises. 
+Video exercises act as instructional videos that accompany a DataCamp course. Instructors can add short videos of them explaining concepts while 
+relevant slides appear in the background. The DataCamp website \url{https://www.datacamp.com/teach/documentation#tab_code_exercises} provides 
+more detail on the content of video exercises. 
 
 \subsubsection{Multiple Choice Exercise}
 
-The \texttt{MultipleChoiceExercise}, as you would expect, contains a question and a list of various answers. Instructors write the questions in the 'lesson'
-portion of the exercise and offer solutions in the 'Instructions' section. Similar to the 'normal' coding exercises, the lesson, instructions, pre-exercise 
-code and SCTs have to be specified but sample and solution code do not. DataCamp offers two types of multiple choice questions: simple and regular. 
+The \texttt{MultipleChoiceExercise}, as you would expect, contains a question and a list of various answers. 
+DataCamp offers two types of multiple choice questions: simple and regular. 
 The simple multiple choice exercises are used for questions that do not require the R console or any R output. Regular multiple choice exercises 
 allow instructors to pre-program objects or plots that the student needs to access to answer the question. Both types of multiple choice exercises 
 are straight forward to write can act as quick checks for understanding throughout the chapter.
 
+Similar to \texttt{normal} coding exercises, the lesson, instructions, hint, pre-exercise 
+code and SCTs are included in the teach editor. However, multiple choice exercises do not have sample or solution code. 
+Instructors write the questions in the lesson
+portion of the exercise and offer solutions in the \texit{Instructions} section. Figuremultichoice is an example of plain multiple choice question.
 \begin{figure}
 \caption{This code does this}
 \begin{Verbatim}[frame=single]
@@ -361,10 +372,13 @@ test_mc(correct = 4,
 ```
 \end{Verbatim}
 \end{figure}
+
+ADD PICTURE OF CORRESPONDING PREVIEW FOR MC QUESTION
+
 \subsection{Advise for smoother course development}
 DataCamp is fairly new so the only existing information on creating a course is on the DataCamp website. While writing my first introductory R programming class on DataCamp, I learned a few tricks that I wish I knew before I started. 
-\subsubsection{Git Hub repositories}
-When creating your first DataCamp course, it is helpful to view code from pre-existing community courses which can be found on Git Hub.
+\subsubsection{GitHub repositories}
+When creating your first DataCamp course, it is helpful to view code from pre-existing community courses which can be found on GitHub.
 DataCamp's github repository contains links to the code for several available courses; one of the most helpful when starting to build a course 
 is \url{https://github.com/datacamp/courses-intro-to-r} which contains the source files for the \textit{Introduction to R} course.
 You can use these files as a guide to build your own course or duplicate the repository and tailor the content to fit specific needs.
@@ -373,7 +387,7 @@ You can use these files as a guide to build your own course or duplicate the rep
 All DataCamp courses will have a course badge and most will use data sets and R packages. Information on how to add data sets and images
 can be found in DataCamps 'Teach' documentation \url{https://www.datacamp.com/teach/documentation} under the 'Upload Assets' tab. However,
 there is currently no information on DataCamp about integrating R packages. To use R packages in a course, you will need to create a new file
-in the Git Hub course repository named \texttt{requirements.r}. The file should contain: \texttt{devtools::install\_version}, package name and version for 
+in the GitHub course repository named \texttt{requirements.r}. The file should contain: \texttt{devtools::install\_version}, package name and version for 
 every package you use in the DataCamp course. For example, following code will add the \texttt{ggplot2} and \texttt{mosaic} packages to the repository.
 
 \begin{verbatim}
