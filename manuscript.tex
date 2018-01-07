@@ -288,22 +288,24 @@ contains the default feedback for a few possible incorrect submissions of the \t
 \begin{figure}
 \caption{Examples of DataCamps Default Feedback}
 \begin{Verbatim}
-Student types:
-histogram(dataset$var_name)
+
+Student types:  histogram(dataset$var_name)
 
 Default message:
 Have you called hist()?
 
-Student types:
-hist(var_name)
+***
+
+Student types: hist(var_name)
 
 Default message:
 Check your call of hist(). Did you correctly specify 
 the argument x? Evaluating the expression you specified
 caused an error.
 
-Student types:
-hist(dataset$misspelled_var)
+***
+
+Student types: hist(dataset$misspelled_var)
 
 Default message:
 Check your call of hist(). Did you correctly specify the
@@ -323,7 +325,7 @@ A \texttt{NormalExercise} is an exercise that prompts a user to submit code. The
 mode) will only include the lesson, instructions, R script panel and R console panel (Figure~\ref{fig:code1}).
 \subsubsection{Video Exercise}
 Video exercises act as instructional videos that accompany a DataCamp course. Instructors can add short videos of them explaining concepts while 
-relevant slides appear in the background. The DataCamp website \url{https://www.datacamp.com/teach/documentation#tab_code_exercises} provides 
+relevant slides appear in the background. The DataCamp website provides 
 more detail on the content of video exercises. 
 
 \subsubsection{Multiple Choice Exercise}
@@ -333,13 +335,8 @@ DataCamp offers two types of multiple choice questions: simple and regular.
 The simple multiple choice exercises are used for questions that do not require the R console or any R output. Regular multiple choice exercises 
 allow instructors to pre-program objects or plots that the student needs to access to answer the question. Both types of multiple choice exercises 
 are straight forward to write can act as quick checks for understanding throughout the chapter.
-
-Similar to \texttt{normal} coding exercises, the lesson, instructions, hint, pre-exercise 
-code and SCTs are included in the teach editor. However, multiple choice exercises do not have sample or solution code. 
-Instructors write the questions in the lesson
-portion of the exercise and offer solutions in the \textit{Instructions} section. Figuremultichoice is an example of plain multiple choice question.
 \begin{figure}
-\caption{This should be in section 3.4.3}
+\caption{Example of Multiple Choice - This should be in section 3.4.3}
 \begin{Verbatim}[frame=single]
 --- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1
     key:9707072219
@@ -353,18 +350,13 @@ What can R be used for?
 - Analyzing data
 - Calculations
 - All of the above
-
 *** =hint
 R software can be used for all of these things.
-
 *** =pre_exercise_code
 ```{r}
-
 ```
-
 *** =sct
 ```{r}
-
 msg_bad <- "That is not correct"
 msg_success <- "Exactly! R can do all of these things."
 test_mc(correct = 4, 
@@ -372,32 +364,35 @@ test_mc(correct = 4,
 ```
 \end{Verbatim}
 \end{figure}
-
-ADD PICTURE OF CORRESPONDING PREVIEW FOR MC QUESTION
+Similar to \texttt{normal} coding exercises, the lesson, instructions, hint, pre-exercise 
+code and SCTs are included in the teach editor. However, multiple choice exercises do not have sample or solution code. 
+Instructors write the questions in the lesson
+portion of the exercise and offer solutions in the \textit{Instructions} section. Figuremultichoice is an example of plain multiple choice question. ADD PICTURE OF CORRESPONDING PREVIEW FOR MC QUESTION
 
 \subsection{Advise for smoother course development}
-DataCamp is fairly new so the only existing information on creating a course is on the DataCamp website. While writing my first introductory R programming class on DataCamp, I learned a few tricks that I wish I knew before I started. 
+DataCamp is fairly new and the only available information about course creation is on the DataCamp website. While writing my first DataCamp R programming course, I learned a few tricks that I wish I knew before I started. 
+
 \subsubsection{GitHub repositories}
-When creating your first DataCamp course, it is helpful to view code from pre-existing community courses which can be found on GitHub.
-DataCamp's github repository contains links to the code for several available courses; one of the most helpful when starting to build a course 
+When creating your first DataCamp course, it is helpful to view the code from existing community courses. 
+The DataCamp repository on GitHub contains links to the course code from several of their available courses. One of the most helpful links for DataCamp beginners
 is \url{https://github.com/datacamp/courses-intro-to-r} which contains the source files for the \textit{Introduction to R} course.
-You can use these files as a guide to build your own course or duplicate the repository and tailor the content to fit specific needs.
+You can use these files as a guide to build your own course or even duplicate the file and tailor the content to fit specific needs.
 
 \subsubsection{Integrating R packages}
-All DataCamp courses will have a course badge and most will use data sets and R packages. Information on how to add data sets and images
-can be found in DataCamps 'Teach' documentation \url{https://www.datacamp.com/teach/documentation} under the 'Upload Assets' tab. However,
+All DataCamp courses will have a course badge (image) and most will use data sets and R packages. Information on how to add data sets and images
+can be found in DataCamps \textit{Teach} documentation \url{https://www.datacamp.com/teach/documentation} under the `Upload Assets' tab. However,
 there is currently no information on DataCamp about integrating R packages. To use R packages in a course, you will need to create a new file
-in the GitHub course repository named \texttt{requirements.r}. The file should contain: \texttt{devtools::install\_version}, package name and version for 
-every package you use in the DataCamp course. For example, following code will add the \texttt{ggplot2} and \texttt{mosaic} packages to the repository.
+in the GitHub course repository named \texttt{requirements.r}. This file should contain a line of code with three components: \texttt{devtools::install\_version}, package name and version for 
+every package you wish to include in the DataCamp course. For example, the following code will add the \texttt{ggplot2} and \texttt{mosaic} packages to the repository.
 
 \begin{verbatim}
 devtools::install_version("ggplot2", "2.2.0")
 devtools::install_version("mosaic", "0.14.4")
 \end{verbatim}
-In order for DataCamp to recognize this new file, you will need to add \texttt{from: r-base-prod:27} to the \texttt{course.yml} file.
+In order for DataCamp to recognize this new file, you will need to add: \\ \texttt{from: r-base-prod:27} \\ to the \texttt{course.yml} file.
 
 \subsubsection{TeX typesetting}
-LaTeX is comparable with DataCamp course builders can use LaTeX math symbols to display Greek letters, formulas, ect. For example:
+LaTeX is compatible with DataCamp; course builders can use LaTeX math symbols to display Greek letters, formulas, ect. For example:
 \begin{verbatim}
 $H_0$: $p = 0.07$
 $H_a$: $p \neq 0.07$
