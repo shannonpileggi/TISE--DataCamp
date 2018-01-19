@@ -157,8 +157,7 @@ defined again.
 \subsubsection{Gamification}
 Each chapter exercise is given a specified number of redeemable points which the students can see when they begin
 the exercise, introducing a gamification feature to the learning experience. When in a classroom group, students can view their
-progress (points and chapters completed) as well as the progress of their peers. Students will often perform better
-in order to be on par with the rest of the class. Furthermore, when students can see the number of available points
+progress (points and chapters completed) as well as the progress of their peers. When students can see the number of available points
 for an exercise it can motivate them to meet their personal achievement goals. \citep{Chang2016}. If the student completes an exercise without
 any assistance, they will receive the full points. If the student is having trouble with a problem, they can view the exercise `hint' option and 30 percent
 of the available points are deducted; all points are deducted if they ask for the solution. 
@@ -178,8 +177,7 @@ by adding students to the DataCamp group by supplying university email addresses
 \section{Creating a DataCamp Course}
 \subsection{Getting Started}
 To build a course on DataCamp you will first need to create a DataCamp account by visiting \url{www.datacamp.com/teach} as well as
-a GitHub account (\url{https://github.com}). (Should this be in section 3.5.2? -- Every DataCamp course is linked through GitHub version control,
-allowing statistics educators to easily collaborate and reproduce code.) The simplest way to begin building the course is to use the template course files from the
+a GitHub account (\url{https://github.com}). The simplest way to begin building the course is to use the template course files from the
 \texttt{Create DataCamp Course} dialog. This will automatically create a GitHub repository that is linked to DataCamp; any changes that are
 made through DataCamp will update the GitHub repository and vice versa. 
 
@@ -206,7 +204,7 @@ also be done through GitHub's online editor or through git locally but these met
 viewing.
 \subsection{Components of a DataCamp Course}
 \subsubsection{Exercise Layout}
-Figure1 is an example of an exercise in the Teach Editor and figure2 is the corresponding interface for students. Students will read the lesson information and instructions, answer the question, and submit their code; it is recommended that each exercise takes approximately 5 minutes.
+Figure1 is an example of an exercise in the Teach Editor and figure2 is the corresponding interface for students. Students will read the lesson information and instructions, answer the question, and submit their code.
 \begin{figure}
 \caption{Teach Editor Interface}
 \begin{Verbatim}[frame=single]
@@ -366,15 +364,15 @@ code and SCTs are included in the teach editor. However, multiple choice exercis
 Instructors write the questions in the lesson
 portion of the exercise and offer solutions in the \textit{Instructions} section. Figuremultichoice is an example of plain multiple choice question. ADD PICTURE OF CORRESPONDING PREVIEW FOR MC QUESTION
 
-\begin{verbatim}
-Multiple choice exercises use the SCT function called  \texttt{test_mc} 
-which requires two arguments: \texttt{correct} and \texttt{feedback_msgs}. 
+
+Multiple choice exercises use the SCT function called  \texttt{test\_mc} 
+which requires two arguments: \texttt{correct} and \texttt{feedback\_msgs}. 
 The \texttt{correct} argument specifies the position of the correct answer;
 if the correct answer is the second option listed, then set \texttt{correct = 2}. 
-The \texttt{feedback_msgs} argument is a vector of strings that contain feedback 
+The \texttt{feedback\_msgs} argument is a vector of strings that contain feedback 
 messages corresponding to the positions of the listed options.
 
-\end{verbatim}
+
 \subsection{Advise for smoother course development}
 DataCamp is fairly new and the only available information about course creation is on the DataCamp website. While the documentation on DataCamp is comprehensive, here are some tips for developing a first course.
 
@@ -385,6 +383,8 @@ is \url{https://github.com/datacamp/courses-intro-to-r} which contains the sourc
 You can use these files as a guide to build your own course or even duplicate the file and tailor the content to fit specific needs.
 
 \subsubsection{Collaboration for course development}
+Every DataCamp course is linked through GitHub version control,
+allowing statistics educators to easily collaborate and reproduce code. 
 To add collaborators to the course, go to the course repository
 on GitHub and under \texttt{Settings} you can enter the user names of collaborators. Collaborators who are not the primary author need 
 to uncheck `My Courses' in order to view and contribute to the repository.
