@@ -124,12 +124,13 @@ This interactive tutorial does not allow for tracking of student progress.
 \section{Introduction to DataCamp}
 
 \hl{Weston - insert background here}
-DataCamp (\url{www.datacamp.com}) was first created in X with the mission to X.
+DataCamp (\url{www.datacamp.com}) was first created in 2013 with the mission to 
+``democratize data science education world wide''.
 DataCamp provides a comprehensive web-based platform to interactive lessons on various coding
 languages. The DataCamp website offers free `community' courses
 as well as more specialized \textit{Premium} classes that require a fee. However, when used
 for academic purposes the \textit{Premium} DataCamp content is free for up to six months.
-Currently, DataCamp has X number of users across X countries.
+Currently, DataCamp has 2.5 million users across virtually all countries.
 
 %--------------------------------------------------------------------------------
 \subsection{Accessibility}
@@ -356,7 +357,7 @@ where the submission is assessed for accuracy.
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \subsubsection{Submission correctness test}
 
-The SCT automatically assesses if the correct code was submitted \citep{Vankrunkelsven2016}. 
+The SCT automatically assesses if the correct code was submitted \citep{Vankrunkelsven2016}.
 If a student submits an incorrect answer, they will receive immediate feedback and guidance towards
 the correct answer.  The SCT is executed through DataCamp's \texttt{testwhat} R
 package (\url{https://github.com/datacamp/testwhat/wiki}). The \textit{testwhat} package
@@ -439,10 +440,10 @@ The \texttt{MultipleChoiceExercise} contains a question and a list of various an
 This exercise is accompanied by the R console and R output, and allows instructors to
 pre-program objects or plots that the student needs to access to answer the question.
 The \texttt{PureMultipleChoiceExercise} contains a question and a list of various
-answers - this exercise type does not include the R console and output. 
+answers - this exercise type does not include the R console and output.
 %Similar to a
 %\texttt{NormalExercise}, the lesson, instructions, hint, pre-exercise code and SCTs are
-%included in the exercise syntax. 
+%included in the exercise syntax.
 Instructors write the questions in the lesson portion
 of the exercise, present options in the \textit{Instructions} section, and can specify a
 \textit{hint} as well. The \texttt{MultipleChoiceExercise} utilizes SCT for assessment,
@@ -455,6 +456,19 @@ Both \texttt{TabExercise} and \texttt{BulletExercise} are a series of connected
 sub-exercises and are suitable for problems that require several steps in a sequence.
 DataCamp documentation provides advice on which exercise is appropriate for a
 given situation.
+
+%--------------------------------------------------------------------------------
+\subsection{Builds}
+
+Once you have executed and saved changes to your DataCamp course, DataCamp will initialize
+a ``build'' attempt.  A build performs validity checks on exercises, provides
+warnings and recommendations, and makes the updates available on the learning
+platform.  Possible build status's include: \emph{in progress}, \emph{warning},
+\emph{pass}, and \emph{fail}.  In the event that a build fails, a build log
+can help you to identify the source of the error and make corrections. Warnings 
+can include helpful suggestions based on design recommendations from DataCamp, 
+including items such as ``The course shouldn't have more than 5 chapters'' or 
+``Exercise X should have at least one submission correctness test''. 
 
 %--------------------------------------------------------------------------------
 \subsection{Advice for course development}
@@ -502,6 +516,8 @@ created the course, \verb|$H_0$| rendered the \texttt{0} in italics rather than 
 a subscript.  The solution was to use the backslash escape (\verb|$H\_0$|) for
 correct rendering.
 
+
+
 %================================================================================
 \section{Experiences in the classroom}
 
@@ -548,7 +564,7 @@ Student comments included:
 \item \emph{Data camp was helpful because it was actually like R.}
 \item \emph{I think it's pretty good because it gives you an interactive way to look over what you'll need to do in class, but doesn't take super long. }
 \end{itemize}
-\hl{Clearly, I am cherry-picking here and there were criticisms of DataCamp as well. 
+\hl{Clearly, I am cherry-picking here and there were criticisms of DataCamp as well.
 How best to present?}
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -591,8 +607,8 @@ re-submit their saved solutions.
 \subsection{Other possibilities}
 
 Although we only discussed DataCamp classroom experiences for non-majors, this
-platform is also well-suited and appropriate for undergraduate students in statistics 
-and data science, as well as graduate students in statistics or even other disciplines. 
+platform is also well-suited and appropriate for undergraduate students in statistics
+and data science, as well as graduate students in statistics or even other disciplines.
 In addition, DataCamp can be a great learning tool for students
 as they embark upon independent student research.
 
@@ -600,58 +616,72 @@ as they embark upon independent student research.
 %================================================================================
 \section{Using metadata for iterative course development}
 
-\hl{Weston - I can't find metadata for my course!  Is there a difference in how
-data is recorded when you add members to DataCamp via email vs link via LMS?
+In addition to tracking data on individual users, DataCamp also tracks metadata 
+about the course overall.  Currently, the metadata is readily available to educators
+utilizing premium courses but not to those utilizing community courses.  However,
+educators utilizing community courses can correspond directly with DataCamp to 
+request metadata for their course.  Metadata includes the following for each exercise
+in a course:
+\begin{itemize}
+\item identifying information 
+\item number of individuals who started the exercise
+\item number of individuals who completed the exercise
+\item the percent that completed the exercise
+\item the percent that asked for a hint
+\item the percent that asked for the solution
+\end{itemize} 
+This information can be used to refine and improve exercises.  A guideline
+used by DataCamp is to flag and modify exercises that have exceed 20\% 
+on hint or solution requests.  
 
-Mine - can you add in here?
-}
+\hl{Mine - can you add in here?}
 
 %================================================================================
 \section{Discussion}
 
 While DataCamp is an incredible interactive tool to learn coding, there are some
-pedagogical disadvantages. First, DataCamp can be fast-paced. Of course, the 
+pedagogical disadvantages. First, DataCamp can be fast-paced. Of course, the
 each user advances through the tutorial at their own speed; however, DataCamp
 lessons are designed to keep moving forward with no clear pauses for reflection.
 Another consequence of this is that DataCamp courses tend to assess correct
 input of code, but not correct interpretation of results. Educators building
-their own course content can incorporate interpretation questions based on 
+their own course content can incorporate interpretation questions based on
 achieved output; however, due to the modularity feature of DataCamp sessions
-are not cumulative (every exercises begins with a clear workspace) so that 
+are not cumulative (every exercises begins with a clear workspace) so that
 an object created in a coding exercise would need to be re-defined for the student
 in a multiple choice exercise. Lastly, due to the fast-paced nature, it is easy
 for students to feel like they ``get it'' in the moment, but have little
-recall as to what they did the next day. Educators can overcome this by 
+recall as to what they did the next day. Educators can overcome this by
 encouraging or requiring note-taking, or by providing quick reference guides
 of syntax learned for later use.
 
 While DataCamp provides a platform to learn coding in R, it does not enable
 users to fully utilize the reproducible and version control capabilities
-of RStudio. Although it does contain courses such as 
+of RStudio. Although it does contain courses such as
 \emph{Reporting with R Markdown} and \emph{Introduction to Git for Data Science},
 it does not enable users to generate Markdown style reports from the web-based
 interface. \hl{(Can you imagine if there was a Markdown button at the end of a lesson
 to generate a report of what you learned?)} For this reason, educators may
-want to use DataCamp as a learning aid, but not as a primary mode for 
+want to use DataCamp as a learning aid, but not as a primary mode for
 student activities.
 
 DataCamp is a private, for-profit company that has gracefully allowed
-the academic community to utilize their resources for free.  However, 
+the academic community to utilize their resources for free.  However,
 this means that both the website and way in which lesson content
 is created is constantly changing.  For example, between September of
 2017 and April of 2018, DataCamp:
 \begin{itemize}
 \item Changed exercise headers from single text line to a \texttt{yaml}
-\item Changed the naming of the exercise \texttt{PlainMultipleChoice} 
+\item Changed the naming of the exercise \texttt{PlainMultipleChoice}
 to \texttt{PureMultipleChoice}
 \item Added new exercise options (the connected sub-exercises)
 \item Changed the \emph{teach} documentation
 \item Changed the web-site interface for \emph{groups}
 \end{itemize}
-While rapid and continuous development of DataCamp products is beneficial 
+While rapid and continuous development of DataCamp products is beneficial
 to both educators and learners, it can be jarring for a new educator
 who just got accustomed to the platform.  Moreover, community
-content creators are not notified when these changes are deployed.  
+content creators are not notified when these changes are deployed.
 Thankfully, for now, lessons created under older formats (i.e.,
 with \texttt{PlainMultipleChoice} or headers in a single text
 line instead of a \texttt{yaml}) still render correctly and no updates are required to
@@ -671,7 +701,7 @@ course content.  \hl{A bit more here?}
 %================================================================================
 \section{Appendix}
 \begin{table}
- \resizebox{\textwidth}{!}{ 
+ \resizebox{\textwidth}{!}{
 \begin{tabular}{lcc}
 \toprule
 	&	Winter 2017	  &	Winter 2018	\\
@@ -705,7 +735,7 @@ I enjoyed using R	                                            &	2.87	&	2.92	\\
 I am glad I learned R	                                        &	3.46	&	3.61	\\
 \bottomrule
 \end{tabular}}
-\caption{Course evaluations from two sections of STAT 217 in Winter 2017 (without DataCamp, response rate = 90\%) 
+\caption{Course evaluations from two sections of STAT 217 in Winter 2017 (without DataCamp, response rate = 90\%)
 and Winter 2018 (with DataCamp, response rate = 82\%) taught
 by the same instructor with otherwise virtually no changes.}
 \label{tab:evals}
